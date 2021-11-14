@@ -44,7 +44,11 @@
                     msg.textContent = 'Make the first folder in the zip is the exported PS4 folder.';
                     return;
                 }
-
+                
+                if (looseCheck.length === 0) {
+                    msg.textContent = 'Make the first folder in the zip is the exported PS4 folder.';
+                    return; 
+                }
                 const uniqueFiles = new Map;
                 for (const file of strictCheck) {
                     if (uniqueFiles.has(file.name)) {
