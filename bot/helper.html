@@ -66,8 +66,11 @@
                 const steps = [
                     'Commands to type in to discord',
                     `Upload the zip "${files[0].name}" and set "+upload" (without the quotes) as the message.`,
-                    `Send "/addpsnid id:${psnId}"`,
-                    `Then send "/quickedit titleid:${titleId} savename:${saveName}". Be sure to specify the patches you want.`,
+                    `Send "+addpsnid ${psnId}"`,
+                    `Send "/decryptsave"`,
+                    `Complete the link to the file uploaded by the bot, then type "+upload" and space and then paste the link. `,
+                    `Send "/patchsave". Be sure to specify the patches you want and set overwrite to true.`,
+                    `Send "/encryptsave titleid:${titleId} savename:${saveName}"`,
                     `If you did it correctly. In a few minutes, a zip file should be uploaded.`,
                 ];
                 successElement.innerHTML = steps.join('<br>');
